@@ -1,0 +1,5619 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\LENOVO
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1635
+    content: "\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\r\n\r\nTry the new cross-platform PowerShell https://aka.ms/pscore6\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 15
+    content: "\e[25l\e[6;1H\e[?25h"
+  - delay: 238
+    content: 'PS C:\Users\LENOVO> '
+  - delay: 1525
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[93mc\e[?25h"
+  - delay: 73
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\bcd\e[?25h"
+  - delay: 152
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[6;21Hcd\e[m \e[?25h"
+  - delay: 1177
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[91m\e[6;19H> \e[93mcd\e[m \e[36m'\e[?25h"
+  - delay: 427
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[6;21Hcd\e[m \e[36m'C:\\Program Files\\MariaDB 12.0\\bin\e[?25h"
+  - delay: 1818
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[6;19H> \e[93mcd\e[m \e[36m'C:\\Program Files\\MariaDB 12.0\\bin'\e[?25h"
+  - delay: 563
+    content: "\e[m\r\n"
+  - delay: 113
+    content: 'PS C:\Program Files\MariaDB 12.0\bin> '
+  - delay: 1737
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[91m\e[7;37H> \e[m.\e[?25h"
+  - delay: 619
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[7;37H> \e[93m./\e[?25h"
+  - delay: 1488
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[91m\e[7;37H> \e[m. \b\e[?25h"
+  - delay: 218
+    content: "\e[?25l"
+  - delay: 15
+    content: "\e[7;37H> \e[93m.\\\e[?25h"
+  - delay: 767
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[7;39H.\\m\e[?25h"
+  - delay: 211
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[7;39H.\\my\e[?25h"
+  - delay: 92
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[7;39H.\\mys\e[?25h"
+  - delay: 194
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[7;39H.\\mysq\e[?25h"
+  - delay: 214
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[7;39H.\\mysql\e[?25h"
+  - delay: 755
+    content: "\e[m\e[?25l"
+  - delay: 21
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[?25h"
+  - delay: 641
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[90m-\e[?25h"
+  - delay: 285
+    content: "\e[m\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[90m-u\e[?25h"
+  - delay: 159
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[90m-u\e[m \e[?25h"
+  - delay: 195
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[90m-u\e[m r\e[?25h"
+  - delay: 122
+    content: "\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[90m-u\e[m ro\e[?25h"
+  - delay: 128
+    content: "\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[90m-u\e[m roo\e[?25h"
+  - delay: 156
+    content: "\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[90m-u\e[m root\e[?25h"
+  - delay: 255
+    content: "\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[90m-u\e[m root \e[?25h"
+  - delay: 193
+    content: "\e[?25l"
+  - delay: 9
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[90m-u\e[m root \e[90m-\e[?25h"
+  - delay: 1811
+    content: "\e[m\e[?25l"
+  - delay: 24
+    content: "\e[93m\e[7;39H.\\mysql\e[m \e[90m-u\e[m root \e[90m-p\e[?25h"
+  - delay: 1037
+    content: "\e[m\r\n"
+  - delay: 74
+    content: 'Enter password: '
+  - delay: 1048
+    content: '*'
+  - delay: 204
+    content: '*'
+  - delay: 163
+    content: '*'
+  - delay: 216
+    content: '*'
+  - delay: 196
+    content: '*'
+  - delay: 156
+    content: '*'
+  - delay: 331
+    content: '*'
+  - delay: 130
+    content: '*'
+  - delay: 107
+    content: '*'
+  - delay: 455
+    content: "\r\n"
+  - delay: 102
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 9
+    content: "\r\nYour MariaDB connection id is 24\e[46X\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\e[16X\r\n\e[78X\r\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[10X\r\n\e[78X\r\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n\e[78X\r\nMariaDB [(none)]> \e[60X"
+  - delay: 2467
+    content: c
+  - delay: 195
+    content: r
+  - delay: 104
+    content: e
+  - delay: 94
+    content: a
+  - delay: 134
+    content: t
+  - delay: 178
+    content: e
+  - delay: 516
+    content: ' '
+  - delay: 175
+    content: d
+  - delay: 70
+    content: a
+  - delay: 159
+    content: t
+  - delay: 112
+    content: a
+  - delay: 118
+    content: b
+  - delay: 128
+    content: a
+  - delay: 119
+    content: s
+  - delay: 191
+    content: e
+  - delay: 366
+    content: ' '
+  - delay: 8948
+    content: s
+  - delay: 106
+    content: i
+  - delay: 109
+    content: s
+  - delay: 893
+    content: t
+  - delay: 94
+    content: e
+  - delay: 328
+    content: m
+  - delay: 934
+    content: _
+  - delay: 279
+    content: s
+  - delay: 198
+    content: e
+  - delay: 166
+    content: r
+  - delay: 430
+    content: v
+  - delay: 3254
+    content: i
+  - delay: 107
+    content: s
+  - delay: 681
+    content: _
+  - delay: 821
+    content: k
+  - delay: 98
+    content: e
+  - delay: 110
+    content: 'n'
+  - delay: 129
+    content: d
+  - delay: 94
+    content: a
+  - delay: 220
+    content: r
+  - delay: 122
+    content: a
+  - delay: 156
+    content: a
+  - delay: 133
+    content: 'n'
+  - delay: 4076
+    content: ;
+  - delay: 129
+    content: "\r\n"
+  - delay: 17
+    content: "Query OK, 1 row affected (0.010 sec)\r\n\e[36X\r\nMariaDB [(none)]> \e[18X"
+  - delay: 1957
+    content: u
+  - delay: 70
+    content: s
+  - delay: 203
+    content: e
+  - delay: 835
+    content: ' '
+  - delay: 1915
+    content: s
+  - delay: 131
+    content: i
+  - delay: 121
+    content: s
+  - delay: 149
+    content: t
+  - delay: 2130
+    content: e
+  - delay: 80
+    content: m
+  - delay: 874
+    content: '-'
+  - delay: 762
+    content: "\b \b"
+  - delay: 871
+    content: _
+  - delay: 541
+    content: s
+  - delay: 176
+    content: e
+  - delay: 142
+    content: r
+  - delay: 271
+    content: v
+  - delay: 132
+    content: i
+  - delay: 168
+    content: s
+  - delay: 145
+    content: ' '
+  - delay: 693
+    content: "\b \b"
+  - delay: 838
+    content: _
+  - delay: 700
+    content: k
+  - delay: 94
+    content: e
+  - delay: 95
+    content: 'n'
+  - delay: 101
+    content: d
+  - delay: 78
+    content: a
+  - delay: 379
+    content: r
+  - delay: 129
+    content: a
+  - delay: 149
+    content: a
+  - delay: 141
+    content: 'n'
+  - delay: 1985
+    content: ;
+  - delay: 264
+    content: "\r\n"
+  - delay: 12
+    content: "Database changed\e[19X\r\nMariaDB [sistem_servis_kendaraan]> "
+  - delay: 4310
+    content: c
+  - delay: 187
+    content: r
+  - delay: 106
+    content: e
+  - delay: 134
+    content: a
+  - delay: 33
+    content: t
+  - delay: 451
+    content: "\b \b"
+  - delay: 734
+    content: t
+  - delay: 90
+    content: e
+  - delay: 552
+    content: ' '
+  - delay: 161
+    content: d
+  - delay: 362
+    content: "\b \b"
+  - delay: 486
+    content: t
+  - delay: 78
+    content: a
+  - delay: 146
+    content: b
+  - delay: 261
+    content: l
+  - delay: 93
+    content: e
+  - delay: 601
+    content: ' '
+  - delay: 2663
+    content: k
+  - delay: 85
+    content: e
+  - delay: 94
+    content: 'n'
+  - delay: 112
+    content: d
+  - delay: 86
+    content: a
+  - delay: 299
+    content: r
+  - delay: 146
+    content: a
+  - delay: 144
+    content: a
+  - delay: 203
+    content: 'n'
+  - delay: 3718
+    content: ' '
+  - delay: 3996
+    content: (
+  - delay: 4225
+    content: i
+  - delay: 116
+    content: d
+  - delay: 943
+    content: _
+  - delay: 598
+    content: k
+  - delay: 84
+    content: e
+  - delay: 87
+    content: 'n'
+  - delay: 178
+    content: d
+  - delay: 150
+    content: a
+  - delay: 120
+    content: r
+  - delay: 147
+    content: a
+  - delay: 139
+    content: a
+  - delay: 430
+    content: 'n'
+  - delay: 2594
+    content: ' '
+  - delay: 184
+    content: i
+  - delay: 168
+    content: 'n'
+  - delay: 135
+    content: t
+  - delay: 158
+    content: ' '
+  - delay: 687
+    content: p
+  - delay: 85
+    content: r
+  - delay: 183
+    content: i
+  - delay: 169
+    content: m
+  - delay: 77
+    content: a
+  - delay: 145
+    content: r
+  - delay: 141
+    content: a
+  - delay: 529
+    content: "\b \b"
+  - delay: 1228
+    content: 'y'
+  - delay: 1381
+    content: ' '
+  - delay: 328
+    content: k
+  - delay: 93
+    content: e
+  - delay: 124
+    content: 'y'
+  - delay: 131
+    content: ' '
+  - delay: 722
+    content: a
+  - delay: 81
+    content: u
+  - delay: 750
+    content: t
+  - delay: 77
+    content: o
+  - delay: 697
+    content: _
+  - delay: 858
+    content: i
+  - delay: 157
+    content: 'n'
+  - delay: 102
+    content: c
+  - delay: 253
+    content: r
+  - delay: 140
+    content: e
+  - delay: 318
+    content: e
+  - delay: 366
+    content: "\b \b"
+  - delay: 8576
+    content: m
+  - delay: 103
+    content: e
+  - delay: 105
+    content: 'n'
+  - delay: 86
+    content: e
+  - delay: 185
+    content: t
+  - delay: 1402
+    content: "\b \b"
+  - delay: 164
+    content: "\b \b"
+  - delay: 620
+    content: t
+  - delay: 16486
+    content: ','
+  - delay: 8147
+    content: j
+  - delay: 78
+    content: e
+  - delay: 119
+    content: 'n'
+  - delay: 141
+    content: i
+  - delay: 92
+    content: s
+  - delay: 1807
+    content: ' '
+  - delay: 391
+    content: v
+  - delay: 102
+    content: a
+  - delay: 124
+    content: r
+  - delay: 323
+    content: c
+  - delay: 189
+    content: h
+  - delay: 107
+    content: a
+  - delay: 90
+    content: r
+  - delay: 905
+    content: ' '
+  - delay: 406
+    content: (
+  - delay: 260
+    content: '1'
+  - delay: 269
+    content: "0\r\n"
+  - delay: 138
+    content: '0'
+  - delay: 870
+    content: )
+  - delay: 2449
+    content: ' '
+  - delay: 230
+    content: 'n'
+  - delay: 153
+    content: o
+  - delay: 210
+    content: t
+  - delay: 123
+    content: ' '
+  - delay: 897
+    content: 'n'
+  - delay: 183
+    content: u
+  - delay: 221
+    content: l
+  - delay: 141
+    content: l
+  - delay: 1207
+    content: ','
+  - delay: 17620
+    content: m
+  - delay: 101
+    content: e
+  - delay: 98
+    content: k
+  - delay: 601
+    content: a
+  - delay: 86
+    content: 'n'
+  - delay: 156
+    content: i
+  - delay: 391
+    content: k
+  - delay: 3520
+    content: ' '
+  - delay: 155
+    content: v
+  - delay: 104
+    content: a
+  - delay: 133
+    content: r
+  - delay: 499
+    content: c
+  - delay: 111
+    content: h
+  - delay: 138
+    content: a
+  - delay: 104
+    content: r
+  - delay: 988
+    content: ' '
+  - delay: 327
+    content: (
+  - delay: 291
+    content: '1'
+  - delay: 196
+    content: '0'
+  - delay: 134
+    content: '0'
+  - delay: 663
+    content: )
+  - delay: 2863
+    content: ','
+  - delay: 6050
+    content: ' '
+  - delay: 10266
+    content: t
+  - delay: 93
+    content: a
+  - delay: 860
+    content: h
+  - delay: 135
+    content: u
+  - delay: 196
+    content: 'n'
+  - delay: 833
+    content: _
+  - delay: 811
+    content: k
+  - delay: 100
+    content: e
+  - delay: 98
+    content: 'n'
+  - delay: 99
+    content: d
+  - delay: 93
+    content: a
+  - delay: 145
+    content: r
+  - delay: 139
+    content: a
+  - delay: 148
+    content: a
+  - delay: 102
+    content: 'n'
+  - delay: 4286
+    content: "\b"
+  - delay: 509
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 192
+    content: "\b"
+  - delay: 364
+    content: "\b"
+  - delay: 605
+    content: "\e[1C"
+  - delay: 521
+    content: "\e[1C"
+  - delay: 532
+    content: "\b"
+  - delay: 871
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,mekani varchar (100), tahun_kendaraan \e[K\e[23;19H\e[?25h"
+  - delay: 144
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,mekan varchar (100), tahun_kendaraan  \e[K\e[23;18H\e[?25h"
+  - delay: 127
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,meka varchar (100), tahun_kendaraan   \e[K\e[23;17H\e[?25h"
+  - delay: 138
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,mek varchar (100), tahun_kendaraan    \e[K\e[23;16H\e[?25h"
+  - delay: 279
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,me varchar (100), tahun_kendaraan     \e[K\e[23;15H\e[?25h"
+  - delay: 269
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,m varchar (100), tahun_kendaraan      \e[K\e[23;14H\e[?25h"
+  - delay: 532
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null, varchar (100), tahun_kendaraan       \e[K\e[23;13H\e[?25h"
+  - delay: 10804
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,m varchar (100), tahun_kendaraan      \e[K\e[23;14H\e[?25h"
+  - delay: 87
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,me varchar (100), tahun_kendaraan     \e[K\e[23;15H\e[?25h"
+  - delay: 78
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,mek varchar (100), tahun_kendaraan    \e[K\e[23;16H\e[?25h"
+  - delay: 79
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,meka varchar (100), tahun_kendaraan   \e[K\e[23;17H\e[?25h"
+  - delay: 115
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,mekan varchar (100), tahun_kendaraan  \e[K\e[23;18H\e[?25h"
+  - delay: 169
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,mekani varchar (100), tahun_kendaraan \e[K\e[23;19H\e[?25h"
+  - delay: 177
+    content: "\e[25l\e[22;1HMariaDB [sistem_servis_kendaraan]> create table kendaraan (id_kendaraan int primary key auto_increment,jenis varchar (10\r\n0) not null,mekanik varchar (100), tahun_kendaraan\e[K\e[23;20H\e[?25h"
+  - delay: 896
+    content: "\e[1C"
+  - delay: 518
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 37
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 37
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 38
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 40
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 36
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 38
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 248
+    content: "\e[1C"
+  - delay: 156
+    content: "\e[1C"
+  - delay: 983
+    content: "\e[1C"
+  - delay: 2358
+    content: ' '
+  - delay: 317
+    content: 'y'
+  - delay: 114
+    content: e
+  - delay: 54
+    content: a
+  - delay: 287
+    content: r
+  - delay: 6809
+    content: )
+  - delay: 1178
+    content: ;
+  - delay: 1275
+    content: "\r\n"
+  - delay: 30
+    content: 'Query OK, 0 rows affected (0.029 sec)'
+  - delay: 12
+    content: "\e[25l\e[26;1HMariaDB [sistem_servis_kendaraan]> \e[?25h"
+  - delay: 2064
+    content: i
+  - delay: 155
+    content: 'n'
+  - delay: 101
+    content: s
+  - delay: 183
+    content: e
+  - delay: 139
+    content: r
+  - delay: 1090
+    content: t
+  - delay: 145
+    content: ' '
+  - delay: 495
+    content: i
+  - delay: 116
+    content: 'n'
+  - delay: 103
+    content: t
+  - delay: 78
+    content: o
+  - delay: 106
+    content: ' '
+  - delay: 780
+    content: k
+  - delay: 87
+    content: e
+  - delay: 70
+    content: 'n'
+  - delay: 128
+    content: d
+  - delay: 78
+    content: a
+  - delay: 144
+    content: r
+  - delay: 118
+    content: a
+  - delay: 127
+    content: a
+  - delay: 111
+    content: 'n'
+  - delay: 201
+    content: ' '
+  - delay: 335
+    content: (
+  - delay: 15058
+    content: j
+  - delay: 99
+    content: e
+  - delay: 82
+    content: 'n'
+  - delay: 144
+    content: i
+  - delay: 109
+    content: s
+  - delay: 1202
+    content: ','
+  - delay: 2172
+    content: m
+  - delay: 54
+    content: e
+  - delay: 115
+    content: k
+  - delay: 92
+    content: a
+  - delay: 94
+    content: 'n'
+  - delay: 136
+    content: i
+  - delay: 168
+    content: k
+  - delay: 564
+    content: ','
+  - delay: 4305
+    content: t
+  - delay: 98
+    content: a
+  - delay: 115
+    content: j
+  - delay: 387
+    content: "\b \b"
+  - delay: 241
+    content: h
+  - delay: 291
+    content: 'n'
+  - delay: 526
+    content: "\b \b"
+  - delay: 261
+    content: u
+  - delay: 160
+    content: 'n'
+  - delay: 603
+    content: _
+  - delay: 554
+    content: k
+  - delay: 69
+    content: e
+  - delay: 87
+    content: 'n'
+  - delay: 127
+    content: d
+  - delay: 70
+    content: a
+  - delay: 1032
+    content: r
+  - delay: 121
+    content: a
+  - delay: 153
+    content: a
+  - delay: 87
+    content: 'n'
+  - delay: 1323
+    content: )
+  - delay: 1166
+    content: ' '
+  - delay: 682
+    content: v
+  - delay: 107
+    content: e
+  - delay: 159
+    content: l
+  - delay: 975
+    content: u
+  - delay: 119
+    content: e
+  - delay: 166
+    content: s
+  - delay: 403
+    content: "\b \b"
+  - delay: 1710
+    content: "\b \b"
+  - delay: 136
+    content: "\b \b"
+  - delay: 168
+    content: "\b \b"
+  - delay: 307
+    content: "\b \b"
+  - delay: 328
+    content: a
+  - delay: 116
+    content: l
+  - delay: 214
+    content: u
+  - delay: 104
+    content: e
+  - delay: 149
+    content: s
+  - delay: 637
+    content: ' '
+  - delay: 454
+    content: (
+  - delay: 9510
+    content: t
+  - delay: 747
+    content: o
+  - delay: 149
+    content: 'y'
+  - delay: 139
+    content: o
+  - delay: 78
+    content: t
+  - delay: 628
+    content: a
+  - delay: 778
+    content: ','
+  - delay: 871
+    content: "\b \b"
+  - delay: 129
+    content: "\b \b"
+  - delay: 116
+    content: "\b \b"
+  - delay: 120
+    content: "\b \b"
+  - delay: 116
+    content: "\b \b"
+  - delay: 126
+    content: "\b \b"
+  - delay: 141
+    content: "\b \b"
+  - delay: 635
+    content: ''''
+  - delay: 829
+    content: t
+  - delay: 104
+    content: o
+  - delay: 278
+    content: 'y'
+  - delay: 99
+    content: o
+  - delay: 945
+    content: t
+  - delay: 532
+    content: a
+  - delay: 839
+    content: ''''
+  - delay: 173
+    content: ','
+  - delay: 121
+    content: ''''
+  - delay: 3543
+    content: s
+  - delay: 181
+    content: u
+  - delay: 419
+    content: p
+  - delay: 85
+    content: r
+  - delay: 135
+    content: i
+  - delay: 996
+    content: ''''
+  - delay: 145
+    content: ','
+  - delay: 111
+    content: ''''
+  - delay: 3537
+    content: '2'
+  - delay: 110
+    content: '0'
+  - delay: 123
+    content: '2'
+  - delay: 1802
+    content: '0'
+  - delay: 1094
+    content: "'\r\n"
+  - delay: 1117
+    content: )
+  - delay: 1645
+    content: ','
+  - delay: 888
+    content: (
+  - delay: 4622
+    content: h
+  - delay: 131
+    content: o
+  - delay: 175
+    content: 'n'
+  - delay: 93
+    content: d
+  - delay: 86
+    content: a
+  - delay: 1116
+    content: "\b \b"
+  - delay: 157
+    content: "\b \b"
+  - delay: 130
+    content: "\b \b"
+  - delay: 138
+    content: "\b \b"
+  - delay: 243
+    content: "\b \b"
+  - delay: 439
+    content: ''''
+  - delay: 236
+    content: ','
+  - delay: 631
+    content: "\b \b"
+  - delay: 479
+    content: h
+  - delay: 133
+    content: o
+  - delay: 410
+    content: 'n'
+  - delay: 111
+    content: d
+  - delay: 94
+    content: a
+  - delay: 722
+    content: ''''
+  - delay: 230
+    content: ','
+  - delay: 492
+    content: ''''
+  - delay: 4694
+    content: r
+  - delay: 144
+    content: a
+  - delay: 258
+    content: p
+  - delay: 153
+    content: i
+  - delay: 715
+    content: ''''
+  - delay: 120
+    content: ','
+  - delay: 96
+    content: ''''
+  - delay: 1296
+    content: '2'
+  - delay: 120
+    content: '0'
+  - delay: 91
+    content: '2'
+  - delay: 786
+    content: '2'
+  - delay: 1377
+    content: ''''
+  - delay: 1281
+    content: )
+  - delay: 3548
+    content: ;
+  - delay: 3031
+    content: "\r\n"
+  - delay: 14
+    content: "Query OK, 2 rows affected (0.014 sec) \r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 6
+    content: "\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 2881
+    content: c
+  - delay: 181
+    content: r
+  - delay: 122
+    content: e
+  - delay: 101
+    content: a
+  - delay: 118
+    content: t
+  - delay: 87
+    content: e
+  - delay: 610
+    content: ' '
+  - delay: 241
+    content: t
+  - delay: 85
+    content: a
+  - delay: 114
+    content: b
+  - delay: 206
+    content: l
+  - delay: 130
+    content: e
+  - delay: 168
+    content: ' '
+  - delay: 21543
+    content: p
+  - delay: 81
+    content: e
+  - delay: 142
+    content: l
+  - delay: 120
+    content: a
+  - delay: 129
+    content: 'n'
+  - delay: 222
+    content: g
+  - delay: 132
+    content: g
+  - delay: 461
+    content: a
+  - delay: 449
+    content: 'n'
+  - delay: 646
+    content: ' '
+  - delay: 424
+    content: (
+  - delay: 2704
+    content: i
+  - delay: 117
+    content: d
+  - delay: 356
+    content: _
+  - delay: 671
+    content: p
+  - delay: 86
+    content: e
+  - delay: 99
+    content: l
+  - delay: 141
+    content: a
+  - delay: 87
+    content: 'n'
+  - delay: 183
+    content: g
+  - delay: 118
+    content: g
+  - delay: 114
+    content: a
+  - delay: 89
+    content: 'n'
+  - delay: 1626
+    content: ' '
+  - delay: 355
+    content: i
+  - delay: 155
+    content: 'n'
+  - delay: 95
+    content: t
+  - delay: 152
+    content: ' '
+  - delay: 624
+    content: p
+  - delay: 103
+    content: r
+  - delay: 296
+    content: i
+  - delay: 177
+    content: m
+  - delay: 103
+    content: a
+  - delay: 115
+    content: r
+  - delay: 721
+    content: 'y'
+  - delay: 154
+    content: ' '
+  - delay: 423
+    content: k
+  - delay: 79
+    content: e
+  - delay: 103
+    content: 'y'
+  - delay: 1005
+    content: ' '
+  - delay: 167
+    content: a
+  - delay: 191
+    content: u
+  - delay: 156
+    content: t
+  - delay: 158
+    content: o
+  - delay: 959
+    content: _
+  - delay: 1070
+    content: i
+  - delay: 175
+    content: 'n'
+  - delay: 632
+    content: c
+  - delay: 218
+    content: r
+  - delay: 87
+    content: e
+  - delay: 590
+    content: m
+  - delay: 110
+    content: e
+  - delay: 87
+    content: 'n'
+  - delay: 256
+    content: t
+  - delay: 3962
+    content: ','
+  - delay: 41266
+    content: 'n'
+  - delay: 84
+    content: a
+  - delay: 104
+    content: m
+  - delay: 101
+    content: a
+  - delay: 7545
+    content: ' '
+  - delay: 188
+    content: v
+  - delay: 85
+    content: a
+  - delay: 143
+    content: r
+  - delay: 128
+    content: c
+  - delay: 258
+    content: h
+  - delay: 101
+    content: a
+  - delay: 127
+    content: r
+  - delay: 1671
+    content: ' '
+  - delay: 437
+    content: (
+  - delay: 410
+    content: '1'
+  - delay: 180
+    content: '0'
+  - delay: 133
+    content: "0\r\n"
+  - delay: 534
+    content: )
+  - delay: 1297
+    content: ' '
+  - delay: 175
+    content: 'n'
+  - delay: 142
+    content: o
+  - delay: 213
+    content: t
+  - delay: 107
+    content: ' '
+  - delay: 275
+    content: 'n'
+  - delay: 429
+    content: u
+  - delay: 231
+    content: l
+  - delay: 138
+    content: l
+  - delay: 1269
+    content: ','
+  - delay: 1477
+    content: a
+  - delay: 81
+    content: l
+  - delay: 99
+    content: a
+  - delay: 81
+    content: m
+  - delay: 140
+    content: a
+  - delay: 578
+    content: t
+  - delay: 462
+    content: ' '
+  - delay: 2106
+    content: v
+  - delay: 93
+    content: a
+  - delay: 183
+    content: r
+  - delay: 107
+    content: c
+  - delay: 156
+    content: h
+  - delay: 129
+    content: a
+  - delay: 104
+    content: r
+  - delay: 576
+    content: (
+  - delay: 376
+    content: '1'
+  - delay: 267
+    content: '0'
+  - delay: 139
+    content: '0'
+  - delay: 714
+    content: )
+  - delay: 719
+    content: ','
+  - delay: 949
+    content: 'n'
+  - delay: 164
+    content: o
+  - delay: 1923
+    content: _
+  - delay: 464
+    content: t
+  - delay: 107
+    content: e
+  - delay: 194
+    content: l
+  - delay: 157
+    content: p
+  - delay: 134
+    content: o
+  - delay: 192
+    content: 'n'
+  - delay: 1802
+    content: ' '
+  - delay: 290
+    content: v
+  - delay: 94
+    content: a
+  - delay: 128
+    content: r
+  - delay: 122
+    content: c
+  - delay: 136
+    content: h
+  - delay: 124
+    content: a
+  - delay: 117
+    content: r
+  - delay: 1063
+    content: (
+  - delay: 810
+    content: '1'
+  - delay: 119
+    content: '0'
+  - delay: 138
+    content: '0'
+  - delay: 669
+    content: )
+  - delay: 1968
+    content: )
+  - delay: 445
+    content: ;
+  - delay: 129
+    content: "\r\n"
+  - delay: 18
+    content: "Query OK, 0 rows affected (0.017 sec)\r\n"
+  - delay: 13
+    content: "\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 1817
+    content: i
+  - delay: 163
+    content: 'n'
+  - delay: 77
+    content: s
+  - delay: 181
+    content: e
+  - delay: 122
+    content: r
+  - delay: 266
+    content: t
+  - delay: 461
+    content: ' '
+  - delay: 306
+    content: i
+  - delay: 153
+    content: 'n'
+  - delay: 98
+    content: t
+  - delay: 87
+    content: o
+  - delay: 155
+    content: ' '
+  - delay: 3380
+    content: p
+  - delay: 87
+    content: e
+  - delay: 208
+    content: l
+  - delay: 125
+    content: a
+  - delay: 81
+    content: 'n'
+  - delay: 202
+    content: g
+  - delay: 125
+    content: g
+  - delay: 99
+    content: a
+  - delay: 89
+    content: 'n'
+  - delay: 1597
+    content: ' '
+  - delay: 446
+    content: (
+  - delay: 5235
+    content: 'n'
+  - delay: 78
+    content: a
+  - delay: 110
+    content: m
+  - delay: 102
+    content: a
+  - delay: 510
+    content: ','
+  - delay: 2697
+    content: ' '
+  - delay: 290
+    content: a
+  - delay: 97
+    content: l
+  - delay: 104
+    content: a
+  - delay: 64
+    content: m
+  - delay: 150
+    content: a
+  - delay: 631
+    content: t
+  - delay: 347
+    content: ','
+  - delay: 165
+    content: ' '
+  - delay: 1700
+    content: 'n'
+  - delay: 139
+    content: o
+  - delay: 513
+    content: _
+  - delay: 725
+    content: t
+  - delay: 135
+    content: e
+  - delay: 325
+    content: l
+  - delay: 155
+    content: p
+  - delay: 134
+    content: o
+  - delay: 215
+    content: 'n'
+  - delay: 1028
+    content: )
+  - delay: 398
+    content: ' '
+  - delay: 208
+    content: v
+  - delay: 112
+    content: a
+  - delay: 202
+    content: l
+  - delay: 182
+    content: u
+  - delay: 92
+    content: e
+  - delay: 149
+    content: s
+  - delay: 1548
+    content: ' '
+  - delay: 523
+    content: (
+  - delay: 3176
+    content: a
+  - delay: 337
+    content: p
+  - delay: 109
+    content: d
+  - delay: 94
+    content: a
+  - delay: 670
+    content: l
+  - delay: 686
+    content: "\b \b"
+  - delay: 158
+    content: "\b \b"
+  - delay: 138
+    content: "\b \b"
+  - delay: 134
+    content: "\b \b"
+  - delay: 239
+    content: "\b \b"
+  - delay: 724
+    content: ''''
+  - delay: 411
+    content: ','
+  - delay: 595
+    content: "\b \b"
+  - delay: 585
+    content: a
+  - delay: 124
+    content: p
+  - delay: 119
+    content: d
+  - delay: 94
+    content: a
+  - delay: 362
+    content: ''''
+  - delay: 280
+    content: ','
+  - delay: 559
+    content: ''''
+  - delay: 1909
+    content: p
+  - delay: 94
+    content: a
+  - delay: 97
+    content: m
+  - delay: 207
+    content: u
+  - delay: 169
+    content: l
+  - delay: 109
+    content: a
+  - delay: 143
+    content: 'n'
+  - delay: 201
+    content: g
+  - delay: 547
+    content: ''''
+  - delay: 139
+    content: ','
+  - delay: 126
+    content: ''''
+  - delay: 2862
+    content: '0'
+  - delay: 161
+    content: '8'
+  - delay: 356
+    content: '2'
+  - delay: 126
+    content: '1'
+  - delay: 366
+    content: '5'
+  - delay: 219
+    content: '4'
+  - delay: 175
+    content: '2'
+  - delay: 169
+    content: '4'
+  - delay: 397
+    content: '5'
+  - delay: 172
+    content: "4\r\n"
+  - delay: 3114
+    content: ''''
+  - delay: 2758
+    content: )
+  - delay: 848
+    content: ','
+  - delay: 850
+    content: (
+  - delay: 1288
+    content: ''''
+  - delay: 418
+    content: r
+  - delay: 99
+    content: e
+  - delay: 672
+    content: g
+  - delay: 458
+    content: a
+  - delay: 78
+    content: d
+  - delay: 728
+    content: "\b \b"
+  - delay: 100
+    content: r
+  - delay: 159
+    content: d
+  - delay: 859
+    content: ''''
+  - delay: 220
+    content: ','
+  - delay: 639
+    content: ''''
+  - delay: 1921
+    content: p
+  - delay: 485
+    content: a
+  - delay: 89
+    content: m
+  - delay: 735
+    content: u
+  - delay: 188
+    content: l
+  - delay: 132
+    content: a
+  - delay: 316
+    content: g
+  - delay: 404
+    content: "\b \b"
+  - delay: 437
+    content: 'n'
+  - delay: 179
+    content: g
+  - delay: 1122
+    content: ''''
+  - delay: 1498
+    content: ','
+  - delay: 527
+    content: ''''
+  - delay: 2030
+    content: '0'
+  - delay: 452
+    content: '8'
+  - delay: 459
+    content: '2'
+  - delay: 32
+    content: '1'
+  - delay: 138
+    content: '2'
+  - delay: 823
+    content: '2'
+  - delay: 96
+    content: '6'
+  - delay: 80
+    content: '2'
+  - delay: 37
+    content: '5'
+  - delay: 39
+    content: '6'
+  - delay: 101
+    content: '5'
+  - delay: 54
+    content: '6'
+  - delay: 646
+    content: "\b \b"
+  - delay: 2289
+    content: ''''
+  - delay: 5135
+    content: )
+  - delay: 2720
+    content: ','
+  - delay: 1699
+    content: (
+  - delay: 3198
+    content: o
+  - delay: 228
+    content: j
+  - delay: 93
+    content: a
+  - delay: 103
+    content: 'n'
+  - delay: 480
+    content: "\b \b"
+  - delay: 155
+    content: "\b \b"
+  - delay: 142
+    content: "\b \b"
+  - delay: 241
+    content: "\b \b"
+  - delay: 588
+    content: ''''
+  - delay: 484
+    content: o
+  - delay: 169
+    content: j
+  - delay: 121
+    content: a
+  - delay: 86
+    content: 'n'
+  - delay: 2129
+    content: ''''
+  - delay: 4308
+    content: ','
+  - delay: 5030
+    content: b
+  - delay: 132
+    content: i
+  - delay: 754
+    content: "\b \b"
+  - delay: 163
+    content: "\b \b"
+  - delay: 869
+    content: ''''
+  - delay: 133
+    content: ','
+  - delay: 942
+    content: "\b \b"
+  - delay: 899
+    content: b
+  - delay: 156
+    content: i
+  - delay: 165
+    content: 'n'
+  - delay: 222
+    content: t
+  - delay: 93
+    content: a
+  - delay: 79
+    content: r
+  - delay: 269
+    content: o
+  - delay: 941
+    content: ''''
+  - delay: 530
+    content: ','
+  - delay: 2476
+    content: '0'
+  - delay: 134
+    content: '8'
+  - delay: 500
+    content: "\b \b"
+  - delay: 155
+    content: "\b \b"
+  - delay: 545
+    content: ''''
+  - delay: 1012
+    content: '0'
+  - delay: 166
+    content: '8'
+  - delay: 152
+    content: '2'
+  - delay: 190
+    content: '1'
+  - delay: 93
+    content: '2'
+  - delay: 95
+    content: '1'
+  - delay: 77
+    content: '2'
+  - delay: 53
+    content: '1'
+  - delay: 102
+    content: '2'
+  - delay: 71
+    content: '1'
+  - delay: 1050
+    content: ''''
+  - delay: 776
+    content: )
+  - delay: 9629
+    content: ;
+  - delay: 478
+    content: "\r\n"
+  - delay: 6
+    content: "Query OK, 3 rows affected (0.006 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 12
+    content: "\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 6346
+    content: c
+  - delay: 190
+    content: r
+  - delay: 99
+    content: e
+  - delay: 94
+    content: a
+  - delay: 133
+    content: t
+  - delay: 104
+    content: e
+  - delay: 809
+    content: ' '
+  - delay: 2227
+    content: t
+  - delay: 77
+    content: a
+  - delay: 119
+    content: b
+  - delay: 238
+    content: l
+  - delay: 110
+    content: e
+  - delay: 155
+    content: ' '
+  - delay: 41018
+    content: s
+  - delay: 449
+    content: e
+  - delay: 94
+    content: r
+  - delay: 815
+    content: v
+  - delay: 148
+    content: i
+  - delay: 413
+    content: s
+  - delay: 2501
+    content: "\b \b"
+  - delay: 142
+    content: "\b \b"
+  - delay: 133
+    content: "\b \b"
+  - delay: 138
+    content: "\b \b"
+  - delay: 146
+    content: "\b \b"
+  - delay: 154
+    content: "\b \b"
+  - delay: 4978
+    content: s
+  - delay: 479
+    content: e
+  - delay: 146
+    content: r
+  - delay: 496
+    content: v
+  - delay: 117
+    content: i
+  - delay: 659
+    content: s
+  - delay: 1166
+    content: ' '
+  - delay: 759
+    content: (
+  - delay: 1278
+    content: i
+  - delay: 126
+    content: d
+  - delay: 857
+    content: _
+  - delay: 364
+    content: s
+  - delay: 213
+    content: e
+  - delay: 135
+    content: r
+  - delay: 540
+    content: c
+  - delay: 689
+    content: "\b \b"
+  - delay: 689
+    content: v
+  - delay: 84
+    content: i
+  - delay: 104
+    content: s
+  - delay: 3050
+    content: ' '
+  - delay: 3714
+    content: i
+  - delay: 149
+    content: 'n'
+  - delay: 128
+    content: t
+  - delay: 199
+    content: ' '
+  - delay: 813
+    content: p
+  - delay: 92
+    content: r
+  - delay: 636
+    content: i
+  - delay: 164
+    content: m
+  - delay: 91
+    content: a
+  - delay: 1809
+    content: r
+  - delay: 214
+    content: 'y'
+  - delay: 260
+    content: ' '
+  - delay: 219
+    content: k
+  - delay: 112
+    content: e
+  - delay: 546
+    content: 'y'
+  - delay: 729
+    content: ' '
+  - delay: 389
+    content: a
+  - delay: 276
+    content: u
+  - delay: 245
+    content: t
+  - delay: 105
+    content: o
+  - delay: 1838
+    content: _
+  - delay: 788
+    content: i
+  - delay: 173
+    content: 'n'
+  - delay: 137
+    content: c
+  - delay: 262
+    content: r
+  - delay: 111
+    content: e
+  - delay: 144
+    content: m
+  - delay: 119
+    content: e
+  - delay: 97
+    content: 'n'
+  - delay: 657
+    content: t
+  - delay: 318
+    content: ' '
+  - delay: 7034
+    content: ','
+  - delay: 917
+    content: "\b \b"
+  - delay: 216
+    content: "\b \b"
+  - delay: 4387
+    content: ','
+  - delay: 1974
+    content: i
+  - delay: 89
+    content: d
+  - delay: 982
+    content: _
+  - delay: 3276
+    content: p
+  - delay: 84
+    content: e
+  - delay: 91
+    content: l
+  - delay: 108
+    content: a
+  - delay: 102
+    content: 'n'
+  - delay: 174
+    content: g
+  - delay: 119
+    content: g
+  - delay: 98
+    content: a
+  - delay: 103
+    content: 'n'
+  - delay: 12509
+    content: ' '
+  - delay: 451
+    content: i
+  - delay: 171
+    content: 'n'
+  - delay: 154
+    content: t
+  - delay: 283
+    content: ' '
+  - delay: 200
+    content: 'n'
+  - delay: 568
+    content: o
+  - delay: 235
+    content: t
+  - delay: 162
+    content: ' '
+  - delay: 305
+    content: 'n'
+  - delay: 121
+    content: "u\r\n"
+  - delay: 177
+    content: l
+  - delay: 145
+    content: l
+  - delay: 497
+    content: ','
+  - delay: 1486
+    content: i
+  - delay: 100
+    content: d
+  - delay: 522
+    content: _
+  - delay: 5850
+    content: k
+  - delay: 145
+    content: e
+  - delay: 1273
+    content: 'n'
+  - delay: 149
+    content: d
+  - delay: 102
+    content: a
+  - delay: 575
+    content: r
+  - delay: 124
+    content: a
+  - delay: 338
+    content: a
+  - delay: 25
+    content: 'n'
+  - delay: 1393
+    content: ' '
+  - delay: 462
+    content: i
+  - delay: 148
+    content: 'n'
+  - delay: 102
+    content: t
+  - delay: 182
+    content: ' '
+  - delay: 171
+    content: 'n'
+  - delay: 161
+    content: o
+  - delay: 210
+    content: 'y'
+  - delay: 157
+    content: ' '
+  - delay: 195
+    content: 'n'
+  - delay: 149
+    content: u
+  - delay: 205
+    content: l
+  - delay: 131
+    content: l
+  - delay: 1375
+    content: ','
+  - delay: 1351
+    content: t
+  - delay: 102
+    content: a
+  - delay: 107
+    content: 'n'
+  - delay: 201
+    content: g
+  - delay: 126
+    content: g
+  - delay: 118
+    content: a
+  - delay: 667
+    content: l
+  - delay: 1141
+    content: _
+  - delay: 207
+    content: s
+  - delay: 184
+    content: e
+  - delay: 260
+    content: r
+  - delay: 1448
+    content: v
+  - delay: 294
+    content: i
+  - delay: 137
+    content: s
+  - delay: 4924
+    content: ' '
+  - delay: 253
+    content: d
+  - delay: 86
+    content: a
+  - delay: 193
+    content: t
+  - delay: 118
+    content: e
+  - delay: 93
+    content: ' '
+  - delay: 163
+    content: 'n'
+  - delay: 171
+    content: o
+  - delay: 250
+    content: t
+  - delay: 655
+    content: ' '
+  - delay: 222
+    content: 'n'
+  - delay: 211
+    content: u
+  - delay: 829
+    content: l
+  - delay: 130
+    content: l
+  - delay: 631
+    content: ','
+  - delay: 859
+    content: ' '
+  - delay: 621
+    content: t
+  - delay: 116
+    content: a
+  - delay: 485
+    content: 'n'
+  - delay: 213
+    content: g
+  - delay: 110
+    content: g
+  - delay: 130
+    content: a
+  - delay: 112
+    content: l
+  - delay: 1002
+    content: _
+  - delay: 747
+    content: s
+  - delay: 160
+    content: e
+  - delay: 138
+    content: l
+  - delay: 92
+    content: e
+  - delay: 178
+    content: s
+  - delay: 119
+    content: a
+  - delay: 127
+    content: i
+  - delay: 731
+    content: ' '
+  - delay: 1136
+    content: d
+  - delay: 34
+    content: a
+  - delay: 252
+    content: t
+  - delay: 112
+    content: e
+  - delay: 1771
+    content: ','
+  - delay: 234
+    content: ' '
+  - delay: 392
+    content: f
+  - delay: 187
+    content: o
+  - delay: 281
+    content: r
+  - delay: 96
+    content: e
+  - delay: 215
+    content: i
+  - delay: 222
+    content: g
+  - delay: 152
+    content: 'n'
+  - delay: 201
+    content: ' '
+  - delay: 612
+    content: k
+  - delay: 94
+    content: e
+  - delay: 234
+    content: 'y'
+  - delay: 137
+    content: ' '
+  - delay: 1388
+    content: (
+  - delay: 448
+    content: i
+  - delay: 90
+    content: d
+  - delay: 338
+    content: _
+  - delay: 790
+    content: p
+  - delay: 87
+    content: e
+  - delay: 103
+    content: l
+  - delay: 172
+    content: a
+  - delay: 115
+    content: 'n'
+  - delay: 190
+    content: g
+  - delay: 122
+    content: g
+  - delay: 99
+    content: a
+  - delay: 97
+    content: 'n'
+  - delay: 1754
+    content: _
+  - delay: 283
+    content: ' '
+  - delay: 243
+    content: r
+  - delay: 100
+    content: e
+  - delay: 85
+    content: f
+  - delay: 107
+    content: e
+  - delay: 144
+    content: r
+  - delay: 117
+    content: e
+  - delay: 151
+    content: 'n'
+  - delay: 1067
+    content: c
+  - delay: 96
+    content: e
+  - delay: 169
+    content: s
+  - delay: 513
+    content: ' '
+  - delay: 663
+    content: "p\r\n"
+  - delay: 109
+    content: e
+  - delay: 105
+    content: l
+  - delay: 141
+    content: a
+  - delay: 96
+    content: 'n'
+  - delay: 178
+    content: g
+  - delay: 127
+    content: g
+  - delay: 93
+    content: a
+  - delay: 118
+    content: 'n'
+  - delay: 541
+    content: ' '
+  - delay: 449
+    content: (
+  - delay: 697
+    content: i
+  - delay: 109
+    content: d
+  - delay: 487
+    content: _
+  - delay: 787
+    content: p
+  - delay: 84
+    content: e
+  - delay: 109
+    content: l
+  - delay: 767
+    content: a
+  - delay: 147
+    content: 'n'
+  - delay: 202
+    content: g
+  - delay: 123
+    content: g
+  - delay: 102
+    content: a
+  - delay: 97
+    content: 'n'
+  - delay: 773
+    content: )
+  - delay: 377
+    content: ','
+  - delay: 2039
+    content: ' '
+  - delay: 381
+    content: f
+  - delay: 69
+    content: r
+  - delay: 49
+    content: o
+  - delay: 138
+    content: e
+  - delay: 475
+    content: i
+  - delay: 1352
+    content: "\b \b"
+  - delay: 135
+    content: "\b \b"
+  - delay: 128
+    content: "\b \b"
+  - delay: 153
+    content: "\b \b"
+  - delay: 798
+    content: o
+  - delay: 130
+    content: r
+  - delay: 86
+    content: e
+  - delay: 1210
+    content: g
+  - delay: 871
+    content: 'n'
+  - delay: 501
+    content: "\b \b"
+  - delay: 138
+    content: "\b \b"
+  - delay: 728
+    content: i
+  - delay: 199
+    content: g
+  - delay: 167
+    content: 'n'
+  - delay: 397
+    content: ' '
+  - delay: 319
+    content: k
+  - delay: 85
+    content: e
+  - delay: 173
+    content: 'y'
+  - delay: 127
+    content: ' '
+  - delay: 873
+    content: (
+  - delay: 2115
+    content: i
+  - delay: 76
+    content: d
+  - delay: 752
+    content: _
+  - delay: 1186
+    content: k
+  - delay: 85
+    content: e
+  - delay: 108
+    content: 'n'
+  - delay: 126
+    content: d
+  - delay: 69
+    content: a
+  - delay: 207
+    content: r
+  - delay: 110
+    content: a
+  - delay: 147
+    content: a
+  - delay: 111
+    content: 'n'
+  - delay: 2686
+    content: )
+  - delay: 960
+    content: ' '
+  - delay: 518
+    content: r
+  - delay: 89
+    content: e
+  - delay: 103
+    content: f
+  - delay: 124
+    content: e
+  - delay: 99
+    content: r
+  - delay: 126
+    content: e
+  - delay: 145
+    content: 'n'
+  - delay: 392
+    content: c
+  - delay: 93
+    content: e
+  - delay: 170
+    content: s
+  - delay: 1467
+    content: ' '
+  - delay: 489
+    content: k
+  - delay: 84
+    content: e
+  - delay: 89
+    content: 'n'
+  - delay: 121
+    content: d
+  - delay: 77
+    content: a
+  - delay: 187
+    content: r
+  - delay: 123
+    content: a
+  - delay: 138
+    content: a
+  - delay: 88
+    content: 'n'
+  - delay: 360
+    content: ' '
+  - delay: 409
+    content: (
+  - delay: 1477
+    content: i
+  - delay: 85
+    content: d
+  - delay: 387
+    content: _
+  - delay: 564
+    content: k
+  - delay: 94
+    content: e
+  - delay: 122
+    content: 'n'
+  - delay: 236
+    content: d
+  - delay: 71
+    content: a
+  - delay: 158
+    content: r
+  - delay: 124
+    content: a
+  - delay: 144
+    content: a
+  - delay: 106
+    content: 'n'
+  - delay: 690
+    content: )
+  - delay: 1812
+    content: )
+  - delay: 470
+    content: ;
+  - delay: 157
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near 'null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pela...' a\b\r\nt line 1"
+  - delay: 9
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 1251
+    content: "\e[25lcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h"
+  - delay: 9
+    content: "\e[25l\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 5729
+    content: "\b"
+  - delay: 1955
+    content: "\b"
+  - delay: 518
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 40
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\r"
+  - delay: 34
+    content: "\e[25l\e[29;120H\e[?25h"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 43
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 40
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 40
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 906
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int no null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references pe\r\nlanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[29;23H\e[?25h"
+  - delay: 848
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[29;24H\e[?25h"
+  - delay: 386
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\r\e[?25h\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near 'references pelanggan (id_pelanggan), foreign key (id_kendaraan) references ke...' a\b\r\nt line 1"
+  - delay: 15
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 1476
+    content: "\e[25lcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h"
+  - delay: 7
+    content: "\e[25l\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 16574
+    content: "\b"
+  - delay: 511
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 40
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 40
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\r"
+  - delay: 32
+    content: "\e[25l\e[29;120H\e[?25h"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 890
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 2019
+    content: "\b"
+  - delay: 157
+    content: "\b"
+  - delay: 125
+    content: "\b"
+  - delay: 128
+    content: "\b"
+  - delay: 121
+    content: "\b"
+  - delay: 121
+    content: "\b"
+  - delay: 131
+    content: "\b"
+  - delay: 129
+    content: "\b"
+  - delay: 111
+    content: "\b"
+  - delay: 298
+    content: "\b"
+  - delay: 183
+    content: "\b"
+  - delay: 972
+    content: "\b"
+  - delay: 104
+    content: "\b"
+  - delay: 157
+    content: "\b"
+  - delay: 150
+    content: "\b"
+  - delay: 120
+    content: "\b"
+  - delay: 516
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 231
+    content: "\b"
+  - delay: 140
+    content: "\b"
+  - delay: 141
+    content: "\b"
+  - delay: 185
+    content: "\b"
+  - delay: 314
+    content: "\r"
+  - delay: 310
+    content: "\e[25l\e[29;120H\e[?25h"
+  - delay: 511
+    content: "\b"
+  - delay: 155
+    content: "\b"
+  - delay: 142
+    content: "\b"
+  - delay: 157
+    content: "\b"
+  - delay: 142
+    content: "\b"
+  - delay: 142
+    content: "\b"
+  - delay: 142
+    content: "\b"
+  - delay: 233
+    content: "\b"
+  - delay: 137
+    content: "\b"
+  - delay: 129
+    content: "\b"
+  - delay: 133
+    content: "\b"
+  - delay: 125
+    content: "\b"
+  - delay: 127
+    content: "\b"
+  - delay: 114
+    content: "\b"
+  - delay: 229
+    content: "\b"
+  - delay: 893
+    content: "\e[1C"
+  - delay: 151
+    content: "\e[1C"
+  - delay: 1043
+    content: "\e[1C"
+  - delay: 546
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan references pe\r\nlanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[29;107H\e[?25h"
+  - delay: 1346
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[29;108H\e[?25h"
+  - delay: 1185
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\r\e[?25h\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near 'null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pela...' a\b\r\nt line 1"
+  - delay: 18
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 1310
+    content: "\e[25lcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h\e[25l\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 11872
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near 'null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pela...' a\b\r\nt line 1"
+  - delay: 18
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 2521
+    content: "\e[25lcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h\e[25l\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 4169
+    content: ','
+  - delay: 148
+    content: ;
+  - delay: 213
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near 'null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pela...' a\b\r\nt line 1\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near '' at line 1"
+  - delay: 10
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 174
+    content: "\r\n"
+  - delay: 11
+    content: 'MariaDB [sistem_servis_kendaraan]> '
+  - delay: 1298
+    content: c
+  - delay: 486
+    content: r
+  - delay: 696
+    content: e
+  - delay: 23
+    content: a
+  - delay: 624
+    content: t
+  - delay: 87
+    content: e
+  - delay: 107
+    content: ' '
+  - delay: 2808
+    content: t
+  - delay: 79
+    content: a
+  - delay: 113
+    content: b
+  - delay: 298
+    content: l
+  - delay: 142
+    content: e
+  - delay: 96
+    content: ' '
+  - delay: 2410
+    content: s
+  - delay: 154
+    content: e
+  - delay: 137
+    content: r
+  - delay: 293
+    content: v
+  - delay: 224
+    content: i
+  - delay: 240
+    content: c
+  - delay: 110
+    content: e
+  - delay: 970
+    content: "\b \b"
+  - delay: 154
+    content: s
+  - delay: 340
+    content: "\b \b"
+  - delay: 130
+    content: "\b \b"
+  - delay: 258
+    content: s
+  - delay: 1971
+    content: ' '
+  - delay: 536
+    content: (
+  - delay: 1015
+    content: i
+  - delay: 105
+    content: d
+  - delay: 462
+    content: )
+  - delay: 801
+    content: "\b \b"
+  - delay: 769
+    content: _
+  - delay: 1242
+    content: s
+  - delay: 205
+    content: e
+  - delay: 148
+    content: r
+  - delay: 578
+    content: v
+  - delay: 183
+    content: o
+  - delay: 17
+    content: i
+  - delay: 73
+    content: s
+  - delay: 1247
+    content: "\b \b"
+  - delay: 135
+    content: "\b \b"
+  - delay: 144
+    content: "\b \b"
+  - delay: 503
+    content: i
+  - delay: 99
+    content: s
+  - delay: 511
+    content: ' '
+  - delay: 511
+    content: i
+  - delay: 164
+    content: 'n'
+  - delay: 172
+    content: t
+  - delay: 473
+    content: ' '
+  - delay: 590
+    content: p
+  - delay: 315
+    content: r
+  - delay: 241
+    content: i
+  - delay: 166
+    content: m
+  - delay: 15
+    content: a
+  - delay: 233
+    content: r
+  - delay: 564
+    content: t
+  - delay: 458
+    content: "\b \b"
+  - delay: 309
+    content: 'y'
+  - delay: 140
+    content: ' '
+  - delay: 851
+    content: k
+  - delay: 70
+    content: e
+  - delay: 161
+    content: 'y'
+  - delay: 126
+    content: ' '
+  - delay: 667
+    content: a
+  - delay: 232
+    content: u
+  - delay: 260
+    content: t
+  - delay: 97
+    content: o
+  - delay: 776
+    content: _
+  - delay: 458
+    content: i
+  - delay: 169
+    content: 'n'
+  - delay: 356
+    content: c
+  - delay: 187
+    content: r
+  - delay: 129
+    content: e
+  - delay: 150
+    content: m
+  - delay: 118
+    content: e
+  - delay: 79
+    content: 'n'
+  - delay: 1111
+    content: t
+  - delay: 761
+    content: ','
+  - delay: 2612
+    content: d
+  - delay: 320
+    content: "\b \b"
+  - delay: 266
+    content: i
+  - delay: 118
+    content: d
+  - delay: 746
+    content: _
+  - delay: 1062
+    content: p
+  - delay: 84
+    content: e
+  - delay: 393
+    content: l
+  - delay: 99
+    content: a
+  - delay: 112
+    content: 'n'
+  - delay: 209
+    content: g
+  - delay: 125
+    content: g
+  - delay: 98
+    content: a
+  - delay: 96
+    content: 'n'
+  - delay: 815
+    content: ' '
+  - delay: 360
+    content: i
+  - delay: 145
+    content: 'n'
+  - delay: 85
+    content: t
+  - delay: 166
+    content: ' '
+  - delay: 564
+    content: 'n'
+  - delay: 169
+    content: o
+  - delay: 119
+    content: t
+  - delay: 102
+    content: ' '
+  - delay: 1071
+    content: 'n'
+  - delay: 188
+    content: "u\r\n"
+  - delay: 205
+    content: l
+  - delay: 147
+    content: l
+  - delay: 211
+    content: ','
+  - delay: 2605
+    content: i
+  - delay: 94
+    content: d
+  - delay: 734
+    content: _
+  - delay: 642
+    content: k
+  - delay: 113
+    content: e
+  - delay: 100
+    content: 'n'
+  - delay: 117
+    content: d
+  - delay: 78
+    content: a
+  - delay: 193
+    content: r
+  - delay: 125
+    content: a
+  - delay: 142
+    content: a
+  - delay: 95
+    content: 'n'
+  - delay: 1461
+    content: ' '
+  - delay: 326
+    content: i
+  - delay: 155
+    content: 'n'
+  - delay: 78
+    content: t
+  - delay: 114
+    content: o
+  - delay: 1013
+    content: ' '
+  - delay: 379
+    content: "\b \b"
+  - delay: 144
+    content: "\b \b"
+  - delay: 397
+    content: ' '
+  - delay: 204
+    content: 'n'
+  - delay: 291
+    content: o
+  - delay: 95
+    content: t
+  - delay: 107
+    content: ' '
+  - delay: 368
+    content: 'n'
+  - delay: 193
+    content: u
+  - delay: 228
+    content: l
+  - delay: 128
+    content: l
+  - delay: 2281
+    content: ','
+  - delay: 271
+    content: ' '
+  - delay: 382
+    content: t
+  - delay: 135
+    content: a
+  - delay: 103
+    content: 'n'
+  - delay: 179
+    content: g
+  - delay: 528
+    content: g
+  - delay: 117
+    content: a
+  - delay: 227
+    content: l
+  - delay: 469
+    content: _
+  - delay: 1560
+    content: s
+  - delay: 173
+    content: e
+  - delay: 168
+    content: r
+  - delay: 222
+    content: v
+  - delay: 182
+    content: i
+  - delay: 106
+    content: s
+  - delay: 1662
+    content: ' '
+  - delay: 267
+    content: d
+  - delay: 86
+    content: a
+  - delay: 205
+    content: t
+  - delay: 132
+    content: e
+  - delay: 408
+    content: ' '
+  - delay: 218
+    content: 'n'
+  - delay: 151
+    content: o
+  - delay: 181
+    content: t
+  - delay: 439
+    content: ' '
+  - delay: 310
+    content: 'n'
+  - delay: 192
+    content: u
+  - delay: 194
+    content: l
+  - delay: 121
+    content: l
+  - delay: 1098
+    content: ','
+  - delay: 1731
+    content: t
+  - delay: 110
+    content: a
+  - delay: 102
+    content: 'n'
+  - delay: 189
+    content: g
+  - delay: 120
+    content: g
+  - delay: 160
+    content: a
+  - delay: 363
+    content: l
+  - delay: 212
+    content: ' '
+  - delay: 1365
+    content: "\b \b"
+  - delay: 482
+    content: _
+  - delay: 405
+    content: j
+  - delay: 79
+    content: a
+  - delay: 86
+    content: d
+  - delay: 131
+    content: i
+  - delay: 1471
+    content: d
+  - delay: 47
+    content: a
+  - delay: 205
+    content: t
+  - delay: 122
+    content: e
+  - delay: 1951
+    content: "\b \b"
+  - delay: 159
+    content: "\b \b"
+  - delay: 153
+    content: "\b \b"
+  - delay: 687
+    content: "\b \b"
+  - delay: 499
+    content: ' '
+  - delay: 485
+    content: d
+  - delay: 112
+    content: a
+  - delay: 97
+    content: t
+  - delay: 114
+    content: e
+  - delay: 1149
+    content: ','
+  - delay: 609
+    content: ' '
+  - delay: 490
+    content: f
+  - delay: 223
+    content: o
+  - delay: 147
+    content: r
+  - delay: 87
+    content: e
+  - delay: 697
+    content: i
+  - delay: 190
+    content: g
+  - delay: 241
+    content: 'n'
+  - delay: 365
+    content: ' '
+  - delay: 363
+    content: k
+  - delay: 87
+    content: e
+  - delay: 160
+    content: 'y'
+  - delay: 173
+    content: ' '
+  - delay: 1097
+    content: (
+  - delay: 1293
+    content: i
+  - delay: 157
+    content: d
+  - delay: 1071
+    content: _
+  - delay: 1132
+    content: p
+  - delay: 106
+    content: e
+  - delay: 107
+    content: l
+  - delay: 171
+    content: a
+  - delay: 364
+    content: 'n'
+  - delay: 223
+    content: g
+  - delay: 136
+    content: g
+  - delay: 131
+    content: a
+  - delay: 551
+    content: 'n'
+  - delay: 594
+    content: )
+  - delay: 969
+    content: ' '
+  - delay: 430
+    content: r
+  - delay: 101
+    content: e
+  - delay: 90
+    content: f
+  - delay: 586
+    content: e
+  - delay: 103
+    content: r
+  - delay: 110
+    content: e
+  - delay: 342
+    content: 'n'
+  - delay: 437
+    content: c
+  - delay: 121
+    content: e
+  - delay: 163
+    content: s
+  - delay: 374
+    content: ' '
+  - delay: 967
+    content: k
+  - delay: 85
+    content: e
+  - delay: 93
+    content: 'n'
+  - delay: 128
+    content: "d\r\n"
+  - delay: 69
+    content: a
+  - delay: 1638
+    content: "\r \r"
+  - delay: 161
+    content: "\e[25l\e[29;120H \e[?25h"
+  - delay: 149
+    content: "\b \b"
+  - delay: 829
+    content: "\b \b"
+  - delay: 710
+    content: ' '
+  - delay: 458
+    content: "\b \b"
+  - delay: 5947
+    content: p
+  - delay: 94
+    content: e
+  - delay: 118
+    content: "l\r\n"
+  - delay: 113
+    content: a
+  - delay: 129
+    content: 'n'
+  - delay: 465
+    content: f
+  - delay: 161
+    content: f
+  - delay: 420
+    content: a
+  - delay: 386
+    content: "\b \b"
+  - delay: 142
+    content: "\b \b"
+  - delay: 143
+    content: "\b \b"
+  - delay: 629
+    content: g
+  - delay: 127
+    content: g
+  - delay: 114
+    content: a
+  - delay: 96
+    content: 'n'
+  - delay: 3202
+    content: ' '
+  - delay: 686
+    content: (
+  - delay: 830
+    content: i
+  - delay: 96
+    content: d
+  - delay: 501
+    content: )
+  - delay: 691
+    content: p
+  - delay: 129
+    content: e
+  - delay: 161
+    content: l
+  - delay: 122
+    content: a
+  - delay: 102
+    content: 'n'
+  - delay: 187
+    content: g
+  - delay: 113
+    content: g
+  - delay: 116
+    content: a
+  - delay: 173
+    content: 'n'
+  - delay: 621
+    content: )
+  - delay: 1887
+    content: ','
+  - delay: 178
+    content: ' '
+  - delay: 698
+    content: f
+  - delay: 218
+    content: o
+  - delay: 102
+    content: r
+  - delay: 71
+    content: e
+  - delay: 715
+    content: i
+  - delay: 234
+    content: g
+  - delay: 150
+    content: 'n'
+  - delay: 559
+    content: ' '
+  - delay: 793
+    content: (
+  - delay: 728
+    content: i
+  - delay: 98
+    content: d
+  - delay: 424
+    content: )
+  - delay: 511
+    content: k
+  - delay: 93
+    content: e
+  - delay: 91
+    content: 'n'
+  - delay: 122
+    content: d
+  - delay: 77
+    content: a
+  - delay: 127
+    content: r
+  - delay: 111
+    content: a
+  - delay: 142
+    content: a
+  - delay: 88
+    content: 'n'
+  - delay: 492
+    content: )
+  - delay: 653
+    content: ' '
+  - delay: 292
+    content: r
+  - delay: 132
+    content: e
+  - delay: 95
+    content: f
+  - delay: 175
+    content: r
+  - delay: 118
+    content: e
+  - delay: 157
+    content: 'n'
+  - delay: 279
+    content: c
+  - delay: 548
+    content: e
+  - delay: 175
+    content: s
+  - delay: 338
+    content: ' '
+  - delay: 442
+    content: k
+  - delay: 79
+    content: e
+  - delay: 96
+    content: 'n'
+  - delay: 122
+    content: d
+  - delay: 54
+    content: a
+  - delay: 189
+    content: r
+  - delay: 137
+    content: a
+  - delay: 154
+    content: a
+  - delay: 96
+    content: 'n'
+  - delay: 749
+    content: ' '
+  - delay: 391
+    content: (
+  - delay: 770
+    content: i
+  - delay: 85
+    content: d
+  - delay: 1115
+    content: _
+  - delay: 483
+    content: k
+  - delay: 93
+    content: e
+  - delay: 98
+    content: 'n'
+  - delay: 129
+    content: d
+  - delay: 69
+    content: a
+  - delay: 143
+    content: r
+  - delay: 152
+    content: a
+  - delay: 148
+    content: a
+  - delay: 98
+    content: 'n'
+  - delay: 959
+    content: )
+  - delay: 3946
+    content: )
+  - delay: 520
+    content: ;
+  - delay: 171
+    content: "\r\n"
+  - delay: 10
+    content: "ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\e[25l\r\non for the right syntax to use near 'pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan))' at line 1  \e[30;119H\e[?25h\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 3334
+    content: "\e[25lcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h\e[25l\r\nll,id_kendaraan int not null, tanggal_servis date not null,tanggal_jadi date, foreign key (id_pelanggan) references kpel\e[30;101H\e[?25h\r\nanggan (id)pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan));"
+  - delay: 470
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));,;\e[K\e[?25h"
+  - delay: 341
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 336
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near 'null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pela...' a\b\r\nt line 1"
+  - delay: 12
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 289
+    content: "\r\n"
+  - delay: 22
+    content: 'MariaDB [sistem_servis_kendaraan]> '
+  - delay: 166
+    content: "\r\n"
+  - delay: 18
+    content: 'MariaDB [sistem_servis_kendaraan]> '
+  - delay: 163
+    content: "\r\n"
+  - delay: 23
+    content: 'MariaDB [sistem_servis_kendaraan]> '
+  - delay: 131
+    content: "\r\n"
+  - delay: 23
+    content: 'MariaDB [sistem_servis_kendaraan]> '
+  - delay: 162
+    content: "\r\n"
+  - delay: 10
+    content: 'MariaDB [sistem_servis_kendaraan]> '
+  - delay: 212
+    content: "\r\n"
+  - delay: 20
+    content: 'MariaDB [sistem_servis_kendaraan]> '
+  - delay: 330
+    content: "\r\n"
+  - delay: 12
+    content: 'MariaDB [sistem_servis_kendaraan]> '
+  - delay: 1690
+    content: c
+  - delay: 293
+    content: "\e[25l\bcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h"
+  - delay: 10
+    content: "\e[25l\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 1037
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near 'null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pela...' a\b\r\nt line 1"
+  - delay: 15
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 19636
+    content: "\e[25lcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h"
+  - delay: 7
+    content: "\e[25l\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 7790
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near 'null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pela...' a\b\r\nt line 1"
+  - delay: 17
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 1640
+    content: "\e[25lcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h"
+  - delay: 9
+    content: "\e[25l\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 632
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 299
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 149
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into pelanggan (nama, alamat, no_telpon) values ('apda','pamulang','0821542454\r\n'),('regard','pamulang','08212262565'),('ojan','bintaro','0821212121');\e[K\r\n\e[K\e[29;72H\e[?25h"
+  - delay: 2911
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 502
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into pelanggan (nama, alamat, no_telpon) values ('apda','pamulang','0821542454\r\n'),('regard','pamulang','08212262565'),('ojan','bintaro','0821212121');\e[K\r\n\e[K\e[29;72H\e[?25h"
+  - delay: 1256
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 6821
+    content: "\b"
+  - delay: 519
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\r"
+  - delay: 34
+    content: "\e[25l\e[29;120H\e[?25h"
+  - delay: 33
+    content: "\b"
+  - delay: 40
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 385
+    content: "\b"
+  - delay: 344
+    content: "\e[1C"
+  - delay: 601
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int no null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references pe\r\nlanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[29;23H\e[?25h"
+  - delay: 460
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[29;24H\e[?25h"
+  - delay: 27668
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\r\e[?25h\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near 'references pelanggan (id_pelanggan), foreign key (id_kendaraan) references ke...' a\b\r\nt line 1"
+  - delay: 9
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 1706
+    content: "\e[25lcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h"
+  - delay: 7
+    content: "\e[25l\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 397
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 519
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null, tanggal_servis date not null,tanggal_jadi date, foreign key (id_pelanggan) references kpel\r\nanggan (id)pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 429
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 5705
+    content: "\b"
+  - delay: 631
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan);\e[K\b\e[?25h"
+  - delay: 654
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan);\e[K\r\e[?25h\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\r\non for the right syntax to use near 'null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pela...' a\b\r\nt line 1"
+  - delay: 7
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 627
+    content: "\e[25lcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h\e[25l\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan);"
+  - delay: 865
+    content: "\b"
+  - delay: 415
+    content: "\e[1C"
+  - delay: 271
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 403
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 523
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null, tanggal_servis date not null,tanggal_jadi date, foreign key (id_pelanggan) references kpel\r\nanggan (id)pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 382
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 436
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null, tanggal_servis date not null,tanggal_jadi date, foreign key (id_pelanggan) references kpel\r\nanggan (id)pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 360
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 596
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null, tanggal_servis date not null,tanggal_jadi date, foreign key (id_pelanggan) references kpel\r\nanggan (id)pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 387
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 602
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null, tanggal_servis date not null,tanggal_jadi date, foreign key (id_pelanggan) references kpel\r\nanggan (id)pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 1013
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\b\e[25l\r\non for the right syntax to use near 'pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan))' at line 1  \e[30;119H\e[?25h"
+  - delay: 11
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 545
+    content: "\e[25lcreate table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\e[30;36H\e[?25h\e[25l\r\nll,id_kendaraan int not null, tanggal_servis date not null,tanggal_jadi date, foreign key (id_pelanggan) references kpel\e[30;101H\e[?25h\r\nanggan (id)pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan));"
+  - delay: 539
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));,;\e[K\e[?25h"
+  - delay: 533
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 381
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));,;\e[K\e[?25h"
+  - delay: 365
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int noy null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 251
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan_ references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 1158
+    content: "\b"
+  - delay: 7088
+    content: "\b"
+  - delay: 518
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 2762
+    content: "\b"
+  - delay: 519
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 6893
+    content: "\b"
+  - delay: 517
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\r"
+  - delay: 35
+    content: "\e[25l\e[29;120H\e[?25h"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 181
+    content: "\b"
+  - delay: 167
+    content: "\b"
+  - delay: 815
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan references pe\r\nlanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[29;107H\e[?25h"
+  - delay: 1335
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[29;108H\e[?25h"
+  - delay: 1324
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\r\e[?25h\n"
+  - delay: 26
+    content: "Query OK, 0 rows affected (0.027 sec)\r\n"
+  - delay: 13
+    content: "\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 4479
+    content: i
+  - delay: 848
+    content: 'n'
+  - delay: 1011
+    content: s
+  - delay: 246
+    content: e
+  - delay: 149
+    content: r
+  - delay: 165
+    content: t
+  - delay: 163
+    content: ' '
+  - delay: 536
+    content: i
+  - delay: 140
+    content: 'n'
+  - delay: 163
+    content: t
+  - delay: 81
+    content: o
+  - delay: 155
+    content: ' '
+  - delay: 4129
+    content: s
+  - delay: 1467
+    content: "\b \b"
+  - delay: 124
+    content: e
+  - delay: 94
+    content: r
+  - delay: 391
+    content: "\b \b"
+  - delay: 152
+    content: "\b \b"
+  - delay: 271
+    content: s
+  - delay: 176
+    content: e
+  - delay: 273
+    content: r
+  - delay: 540
+    content: v
+  - delay: 203
+    content: i
+  - delay: 100
+    content: s
+  - delay: 1565
+    content: ' '
+  - delay: 1192
+    content: (
+  - delay: 1015
+    content: i
+  - delay: 107
+    content: d
+  - delay: 886
+    content: _
+  - delay: 3645
+    content: p
+  - delay: 86
+    content: e
+  - delay: 128
+    content: l
+  - delay: 131
+    content: a
+  - delay: 127
+    content: 'n'
+  - delay: 182
+    content: g
+  - delay: 123
+    content: g
+  - delay: 135
+    content: a
+  - delay: 104
+    content: 'n'
+  - delay: 887
+    content: ','
+  - delay: 1213
+    content: i
+  - delay: 77
+    content: d
+  - delay: 501
+    content: _
+  - delay: 2211
+    content: k
+  - delay: 81
+    content: e
+  - delay: 134
+    content: 'n'
+  - delay: 98
+    content: d
+  - delay: 71
+    content: a
+  - delay: 189
+    content: r
+  - delay: 116
+    content: a
+  - delay: 132
+    content: a
+  - delay: 116
+    content: 'n'
+  - delay: 1879
+    content: ','
+  - delay: 800
+    content: t
+  - delay: 126
+    content: a
+  - delay: 229
+    content: 'n'
+  - delay: 420
+    content: g
+  - delay: 125
+    content: g
+  - delay: 121
+    content: a
+  - delay: 124
+    content: l
+  - delay: 960
+    content: _
+  - delay: 401
+    content: s
+  - delay: 213
+    content: e
+  - delay: 200
+    content: r
+  - delay: 219
+    content: v
+  - delay: 209
+    content: i
+  - delay: 144
+    content: s
+  - delay: 2513
+    content: ','
+  - delay: 691
+    content: t
+  - delay: 116
+    content: a
+  - delay: 132
+    content: 'n'
+  - delay: 220
+    content: g
+  - delay: 87
+    content: g
+  - delay: 268
+    content: a
+  - delay: 120
+    content: l
+  - delay: 976
+    content: _
+  - delay: 693
+    content: j
+  - delay: 87
+    content: a
+  - delay: 119
+    content: d
+  - delay: 113
+    content: i
+  - delay: 3024
+    content: )
+  - delay: 2018
+    content: ' '
+  - delay: 164
+    content: v
+  - delay: 106
+    content: a
+  - delay: 619
+    content: l
+  - delay: 519
+    content: u
+  - delay: 85
+    content: e
+  - delay: 172
+    content: s
+  - delay: 664
+    content: ' '
+  - delay: 436
+    content: (
+  - delay: 2535
+    content: '1'
+  - delay: 239
+    content: ",\r\n"
+  - delay: 326
+    content: '2'
+  - delay: 1088
+    content: ','
+  - delay: 1046
+    content: ''''
+  - delay: 477
+    content: '2'
+  - delay: 304
+    content: '0'
+  - delay: 112
+    content: '2'
+  - delay: 708
+    content: '5'
+  - delay: 1678
+    content: '-'
+  - delay: 268
+    content: '0'
+  - delay: 260
+    content: '8'
+  - delay: 258
+    content: '0'
+  - delay: 289
+    content: '9'
+  - delay: 1094
+    content: "\b \b"
+  - delay: 694
+    content: "\b \b"
+  - delay: 566
+    content: '-'
+  - delay: 334
+    content: '0'
+  - delay: 177
+    content: '9'
+  - delay: 1171
+    content: ''''
+  - delay: 1211
+    content: ','
+  - delay: 668
+    content: ''''
+  - delay: 750
+    content: '2'
+  - delay: 189
+    content: '0'
+  - delay: 170
+    content: '2'
+  - delay: 416
+    content: '7'
+  - delay: 423
+    content: "\b \b"
+  - delay: 601
+    content: '5'
+  - delay: 461
+    content: '-'
+  - delay: 1917
+    content: '0'
+  - delay: 216
+    content: '9'
+  - delay: 1073
+    content: '-'
+  - delay: 763
+    content: '0'
+  - delay: 155
+    content: '9'
+  - delay: 913
+    content: ''''
+  - delay: 1476
+    content: )
+  - delay: 2850
+    content: ;
+  - delay: 691
+    content: "\r\n"
+  - delay: 10
+    content: "ERROR 1054 (42S22): Unknown column 'tanggal_jadi' in 'INSERT INTO'\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 1645
+    content: "\e[25linsert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\e[30;36H\e[?25h\r\n2,'2025-08-09','2025-09-09');"
+  - delay: 6551
+    content: "\b"
+  - delay: 208
+    content: "\b"
+  - delay: 313
+    content: "\b"
+  - delay: 161
+    content: "\b"
+  - delay: 175
+    content: "\b"
+  - delay: 180
+    content: "\b"
+  - delay: 160
+    content: "\b"
+  - delay: 194
+    content: "\b"
+  - delay: 175
+    content: "\b"
+  - delay: 152
+    content: "\b"
+  - delay: 708
+    content: "\b"
+  - delay: 518
+    content: "\b"
+  - delay: 40
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 40
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\r"
+  - delay: 35
+    content: "\e[25l\e[29;120H\e[?25h"
+  - delay: 1381
+    content: "\b"
+  - delay: 619
+    content: "\b"
+  - delay: 924
+    content: "\b"
+  - delay: 1691
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 685
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null, tanggal_servis date not null,tanggal_jadi date, foreign key (id_pelanggan) references kpel\r\nanggan (id)pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 368
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 234
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\r\n\e[K\e[29;30H\e[?25h"
+  - delay: 826
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 243
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\r\n\e[K\e[29;30H\e[?25h"
+  - delay: 6397
+    content: "\b"
+  - delay: 518
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 40
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 281
+    content: "\b"
+  - delay: 153
+    content: "\b"
+  - delay: 934
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n,'2025-08-09','2025-09-09');\e[K\r\e[?25h"
+  - delay: 684
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\e[29;2H\e[?25h"
+  - delay: 310
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\r\n\e[?25hERROR 1054 (42S22): Unknown column 'tanggal_jadi' in 'INSERT INTO'"
+  - delay: 20
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 893
+    content: "\e[25linsert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\e[30;36H\e[?25h\r\n1,'2025-08-09','2025-09-09');"
+  - delay: 882
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 95
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 422
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\r\n\e[K\e[29;30H\e[?25h"
+  - delay: 894
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 315
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\r\n\e[K\e[29;30H\e[?25h"
+  - delay: 1875
+    content: "\b"
+  - delay: 185
+    content: "\b"
+  - delay: 334
+    content: "\b"
+  - delay: 358
+    content: "\e[1C"
+  - delay: 529
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09);\e[K\e[29;27H\e[?25h"
+  - delay: 2233
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[29;28H\e[?25h"
+  - delay: 1195
+    content: "\b"
+  - delay: 183
+    content: "\b"
+  - delay: 519
+    content: "\b"
+  - delay: 347
+    content: "\b"
+  - delay: 180
+    content: "\b"
+  - delay: 181
+    content: "\b"
+  - delay: 18691
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\r\n\e[?25hERROR 1054 (42S22): Unknown column 'tanggal_jadi' in 'INSERT INTO'"
+  - delay: 12
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 3994
+    content: "\e[25linsert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\e[30;36H\e[?25h\r\n2,'2025-08-09','2025-09-09');"
+  - delay: 567
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 404
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null, tanggal_servis date not null,tanggal_jadi date, foreign key (id_pelanggan) references kpel\r\nanggan (id)pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 536
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 164
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\r\n\e[K\e[29;30H\e[?25h"
+  - delay: 41061
+    content: "\b"
+  - delay: 189
+    content: "\b"
+  - delay: 519
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 182
+    content: "\b"
+  - delay: 195
+    content: "\b"
+  - delay: 258
+    content: "\r"
+  - delay: 589
+    content: "\e[1C"
+  - delay: 639
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n,'2025-08-09','2025-09-09');\e[K\r\e[?25h"
+  - delay: 320
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\e[29;2H\e[?25h"
+  - delay: 7350
+    content: "\e[1C"
+  - delay: 168
+    content: "\e[1C"
+  - delay: 293
+    content: "\e[1C"
+  - delay: 149
+    content: "\e[1C"
+  - delay: 139
+    content: "\e[1C"
+  - delay: 114
+    content: "\e[1C"
+  - delay: 133
+    content: "\e[1C"
+  - delay: 131
+    content: "\e[1C"
+  - delay: 128
+    content: "\e[1C"
+  - delay: 133
+    content: "\e[1C"
+  - delay: 117
+    content: "\e[1C"
+  - delay: 130
+    content: "\e[1C"
+  - delay: 138
+    content: "\e[1C"
+  - delay: 134
+    content: "\e[1C"
+  - delay: 128
+    content: "\e[1C"
+  - delay: 125
+    content: "\e[1C"
+  - delay: 120
+    content: "\e[1C"
+  - delay: 128
+    content: "\e[1C"
+  - delay: 128
+    content: "\e[1C"
+  - delay: 155
+    content: "\e[1C"
+  - delay: 1146
+    content: "\e[1C"
+  - delay: 285
+    content: "\e[1C"
+  - delay: 112
+    content: "\e[1C"
+  - delay: 128
+    content: "\e[1C"
+  - delay: 133
+    content: "\e[1C"
+  - delay: 304
+    content: "\e[1C"
+  - delay: 156
+    content: "\e[1C"
+  - delay: 446
+    content: "\e[1C"
+  - delay: 652
+    content: "\r\nERROR 1054 (42S22): Unknown column 'tanggal_jadi' in 'INSERT INTO'"
+  - delay: 18
+    content: "\r\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 11621
+    content: "\e[25linsert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\e[30;36H\e[?25h\r\n1,'2025-08-09','2025-09-09');"
+  - delay: 430
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 452
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 898
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 317
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 285
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 228
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 178
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 266
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 163
+    content: "\b"
+  - delay: 321
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 513
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 146
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 159
+    content: "\e[25l\e[29;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\e[30;101H\e[?25h\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));"
+  - delay: 186
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\r\n\e[K\e[29;30H\e[?25h"
+  - delay: 358
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 933
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[?25h"
+  - delay: 200
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\e[?25h"
+  - delay: 374
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\r\n\e[K\e[29;30H\e[?25h"
+  - delay: 1006
+    content: "\b"
+  - delay: 180
+    content: "\b"
+  - delay: 886
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09);\e[K\e[29;27H\e[?25h"
+  - delay: 1093
+    content: "\e[25l\e[28;1HMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[29;28H\e[?25h"
+  - delay: 841
+    content: "\e[1C"
+  - delay: 493
+    content: "\b"
+  - delay: 518
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 400
+    content: "\b"
+  - delay: 197
+    content: "\b"
+  - delay: 168
+    content: "\b"
+  - delay: 561
+    content: "\b"
+  - delay: 4877
+    content: "\b"
+  - delay: 189
+    content: "\b"
+  - delay: 203
+    content: "\b"
+  - delay: 4636
+    content: "\e[1C"
+  - delay: 518
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 39
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 38
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 38
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 634
+    content: "\e[1C"
+  - delay: 462
+    content: "\e[1C"
+  - delay: 21359
+    content: "\b"
+  - delay: 518
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 39
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\r"
+  - delay: 37
+    content: "\e[25l\e[28;120H\e[?25h"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 37
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 551
+    content: "\e[1C"
+  - delay: 437
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jad) values (1,2\r\n,'2025-08-09','2025-09-09');\e[K\e[28;108H\e[?25h"
+  - delay: 165
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_ja) values (1,2,\r\n'2025-08-09','2025-09-09');\e[K\e[28;107H\e[?25h"
+  - delay: 140
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_j) values (1,2,'\r\n2025-08-09','2025-09-09');\e[K\e[28;106H\e[?25h"
+  - delay: 150
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_) values (1,2,'2\r\n025-08-09','2025-09-09');\e[K\e[28;105H\e[?25h"
+  - delay: 467
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_s) values (1,2,'\r\n2025-08-09','2025-09-09');\e[K\e[28;106H\e[?25h"
+  - delay: 221
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_se) values (1,2,\r\n'2025-08-09','2025-09-09');\e[K\e[28;107H\e[?25h"
+  - delay: 159
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_sel) values (1,2\r\n,'2025-08-09','2025-09-09');\e[K\e[28;108H\e[?25h"
+  - delay: 140
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_sele) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\e[28;109H\e[?25h"
+  - delay: 234
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_seles) values (1\r\n,2,'2025-08-09','2025-09-09');\e[K\e[28;110H\e[?25h"
+  - delay: 118
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_selesa) values (\r\n1,2,'2025-08-09','2025-09-09');\e[K\e[28;111H\e[?25h"
+  - delay: 570
+    content: "\e[25l\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_selesai) values \r\n(1,2,'2025-08-09','2025-09-09');\e[K\e[28;112H\e[?25h"
+  - delay: 455
+    content: "\rMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_selesai) values \r\n(1,2,'2025-08-09','2025-09-09');\e[K\r\nQuery OK, 1 row affected (0.003 sec)\r\n"
+  - delay: 19
+    content: "\nMariaDB [sistem_servis_kendaraan]>\e[1C"
+  - delay: 6111
+    content: e
+  - delay: 1177
+    content: "\b \b"
+  - delay: 5499
+    content: e
+  - delay: 1006
+    content: "\b \b"
+  - delay: 1069
+    content: e
+  - delay: 278
+    content: x
+  - delay: 192
+    content: i
+  - delay: 200
+    content: t
+  - delay: 964
+    content: "\r\n"
+  - delay: 8
+    content: Bye
+  - delay: 6
+    content: "\r\n"
+  - delay: 16
+    content: 'PS C:\Program Files\MariaDB 12.0\bin> '
+  - delay: 776
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93me\e[?25h"
+  - delay: 330
+    content: "\e[m\e[?25l"
+  - delay: 13
+    content: "\e[93m\bex\e[?25h"
+  - delay: 182
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[30;39Hexi\e[?25h"
+  - delay: 174
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[92m\e[30;39Hexit\e[?25h"
+  - delay: 824
+    content: "\e[25l\e[m\e[HMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null, tanggal_servis date not null,tanggal_jadi date, foreign key (id_pelanggan) references kpel\r\nanggan (id)pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan));\e[K\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\r\non for the right syntax to use near 'pelanggan), foreign (id)kendaraan) refrences kendaraan (id_kendaraan))' at line 1  \r\nMariaDB [sistem_servis_kendaraan]> create table servis (id_servis int primary key auto_increment,id_pelanggan int not nu\r\nll,id_kendaraan int not null,tanggal_servis date not null, tanggal_selesai date, foreign key (id_pelanggan) references p\r\nelanggan (id_pelanggan), foreign key (id_kendaraan) references kendaraan (id_kendaraan));\e[K\r\nQuery OK, 0 rows affected (0.027 sec)\e[K\r\n\e[K\r\nMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\r\nERROR 1054 (42S22): Unknown column 'tanggal_jadi' in 'INSERT INTO'\e[K\r\nMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\r\nERROR 1054 (42S22): Unknown column 'tanggal_jadi' in 'INSERT INTO'\e[K\r\nMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n2,'2025-08-09','2025-09-09');\e[K\r\nERROR 1054 (42S22): Unknown column 'tanggal_jadi' in 'INSERT INTO'\e[K\r\nMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_jadi) values (1,\r\n1,'2025-08-09','2025-09-09');\e[K\r\nERROR 1054 (42S22): Unknown column 'tanggal_jadi' in 'INSERT INTO'\e[K\r\nMariaDB [sistem_servis_kendaraan]> insert into servis (id_pelanggan,id_kendaraan,tanggal_servis,tanggal_selesai) values \r\n(1,2,'2025-08-09','2025-09-09');\e[K\r\nQuery OK, 1 row affected (0.003 sec)\e[K\r\n\e[K\r\nMariaDB [sistem_servis_kendaraan]> exit\e[K\r\nBye\e[K\r\nPS C:\\Program Files\\MariaDB 12.0\\bin> \e[92mexit\e[m\e[K\r\n\e[K\e[42C\e[?25h"
+  - delay: 11
+    content: "\r"
